@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>연습문제 2</title>
+	<style>
+		body {
+			font-size:1.2em;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<h2>3의 배수 찾기</h2>
+	<h3>jhcode33</h3>
+
+	<script>
+		var input = prompt("숫자를 입력하세요");
+		// 숫자로 변환
+		var number = parseInt(input);
+
+		// 숫자로 변환되었는지 확인
+		if (!isNaN(number)) {
+
+			//3의 배수인지 확인
+			if (!isNaN(number) && number !== null && number % 3 == 0) {
+				document.write(number + "은 3의 배수입니다");
+			} else {
+				document.write(number + "은 3의 배수가 아닙니다");
+			}
+			ㅁㄴㅇ
+		} else {
+			document.write(input + "은 숫자가 아닙니다.");
+		}
+	</script>
+
+</body>
+</html>

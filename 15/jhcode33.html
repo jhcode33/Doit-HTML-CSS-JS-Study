@@ -36,5 +36,51 @@
         var sum = 100; //변수를 재할당할 수 있음, 변수의 이름이 겹치면 값이 덮어쓰게 되어진다.
     </script>
 
+    <h1>함수 재사용</h1>
+    <script>
+        function addTwoNumber(num1, num2){
+            var sum = num1 + num2;
+            return sum;
+        }
+
+        var result = addTwoNumber(10, 30);
+        document.write("두 수를 더한 값 : " + result);
+    </script>
+
+    <h1>즉시 실행 함수</h1>
+    <script>
+        (function (){
+            var userName = prompt("이름을 입력하세요");
+            document.write("안녕하세요? " + userName + "님!");
+        }());
+
+        (function (num1, num2){
+            sum = num1 + num2;
+        }(10, 20));
+        document.write("<br>실행결과: " + sum);
+    </script>
+
+    <h1>익명 함수</h1>
+        <script>
+            const hi = function() {
+                alert("안녕하세요?");
+            }
+            hi();
+        </script>
+
+        <script>
+            const hello = () => {alert("안녕하세요?");};
+            hello();
+        </script>
+
+        <script>
+            let helloWolrd = (user) => {document.write(user + "님, 안녕하세요?");};
+
+            let userName = prompt("이름을 입력하세요");
+            helloWolrd(userName);
+        </script>
+
+
+
 </body>
 </html>

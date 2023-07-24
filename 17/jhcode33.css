@@ -32,7 +32,7 @@
 		}
 		
 		#container { /* id="container"인 요소에 적용할 스타일 */
-			width:800px;
+			width:900px;
 			height:500px;
 			margin:0 auto;
 			padding:20px 10px 0 50px;;
@@ -44,7 +44,7 @@
 		}
 
 		#prod-pic { 			
-			margin:20px 50px auto 0px;
+			margin:30px 50px auto 0px;
 			padding:0;
 		}
 
@@ -67,6 +67,12 @@
 		#desc {  /* id="desc"인 요소에 적용할 스타일 */
 			width:300px;
 		}
+
+        #reply{
+            width: 300px;
+            float:right;
+        }
+
 		h1 {  /* h1 요소에 적용할 스타일 */
 			font-size:1.8em;
 		}

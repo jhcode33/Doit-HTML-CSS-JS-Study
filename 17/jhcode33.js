@@ -70,3 +70,16 @@ function changeTextColor(){
 
 }
 
+function newRegister() {
+    var newItem = document.createElement("li");
+    var subject = document.querySelector("#subject");
+    var newText = document.createTextNode(subject.value);
+
+    newItem.appendChild(newText);
+
+    var itemList = document.querySelector("#itemList");
+    itemList.appendChild(newItem);
+
+    subject.value="";
+}
+

@@ -40,18 +40,15 @@ function myLightbox(){
 
 // mouseover
 function mouseover(){
-    var cover = document.getElementById("cover");
+    var cover = document.querySelector("#cover");
+    //var cover = document.getElementById("cover");
     cover.addEventListener("mouseover", change, false);
-    //cover.addEventListener("mouseout", disChange);
-
-    cover.addEventListener("mouseout", function(){
-        cover.src = "images/easys-1.jpg"
-    });
-
+    cover.addEventListener("mouseout", disChange);
+    
     function change(){
         cover.src = "images/easys-2.jpg";
     }
-
+    
     function disChange(){
         cover.src = "images/easys-1.jpg";
     }
@@ -81,5 +78,18 @@ function newRegister() {
     itemList.appendChild(newItem);
 
     subject.value="";
+
+    // 삭제
+    var items = document.querySelectorAll("li");
+    for(let i = 0; i<items.length; i++){
+        items[i].addEventListener("click", function(){
+            if(this.parentNode){
+                if(confirm("정말로 삭제하시겠습니까?")){
+                    this.parentNode.removeChild(this);
+                };
+            };
+        });
+    };
+
 }
 
